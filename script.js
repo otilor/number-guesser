@@ -1,5 +1,5 @@
 const randomNumber = function () {
-    return 3
+    return Math.floor(Math.random() * 10);
 }
 
 
@@ -9,6 +9,15 @@ guessForm.addEventListener("submit", processGuess);
 
 function processGuess() {
     let userInput = document.getElementById("userInput").value;
-    log.innerHTML = "You submitted " + userInput;
+    guess = randomNumber()
+    if (parseInt(userInput, 10)  === guess) {
+        log.innerHTML = "Correct!";
+        log.className = "success";
+    } else {
+        log.innerHTML = "Wrong! the correct guess was " + guess
+        log.className = "danger"
+    }
+
+
     event.preventDefault()
 }
