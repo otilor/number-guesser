@@ -5,6 +5,7 @@ body {
 .guess-field {
     background-color: coral;
     margin: 15% auto;
+    padding: 0;
 }
 
 .guess-div {
@@ -41,4 +42,8 @@ body {
     padding: 25px;
     border: 0;
     cursor: pointer;
+}
+
+#log {
+    color: blanchedalmond;
 }

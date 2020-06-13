@@ -6,15 +6,20 @@
 	</head>
 
 	<body>
-	<form>
+
 		<div class="guess-field">
+			<form id = "guessForm">
 			<div class="guess-div">
-				<input type="number" class="guess-input" placeholder="Guess a number" autofocus>
+				<input type="number" id = "userInput" class="guess-input" placeholder="Guess a number" autofocus required>
 				<input type="submit" value="Guess" id="guess-submit">
 			</div>
+			</form>
 		</div>
-	</form>
 
+	<div>
+		<p id = "log"></p>
+	</div>
+	<script src="script.js"></script>
 	</body>
 </html>
 
