@@ -58,3 +58,13 @@ footer {
     background-color: #ffffff;
     text-align: center;
 }
+
+.danger {
+    background-color: #ff0000;
+    padding: 15px;
+}
+
+.success {
+    background-color: #48c774;
+    padding: 15px;
+}
